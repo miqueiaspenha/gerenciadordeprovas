@@ -1,0 +1,12 @@
+<!doctype html>
+<head>
+	<title>Quiz</title>
+</head>
+<body>
+{% for dado in dados %}
+	<p>{{dado._id}} - {{ dado.nome }}</p>
+{% else %}
+	<p>Não existe alunos cadastrados!</p>
+{% endfor %}
+</body>
+</html>
